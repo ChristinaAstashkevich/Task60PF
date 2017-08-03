@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-    protected WebDriver driver = WebBrowser.getInstance();
+    private WebDriver driver = WebBrowser.getInstance();
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;

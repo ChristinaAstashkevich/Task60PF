@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MailBoxPage {
-    protected WebDriver driver;
+    private WebDriver driver;
 
     public MailBoxPage(WebDriver driver){
         this.driver = driver;
@@ -18,7 +18,7 @@ public class MailBoxPage {
     @FindBy(css = "[data-name='compose']")
     private WebElement composeButton;
 
-    @FindBy(css = "#PH_logoutLink")
+    @FindBy(id = "PH_logoutLink")
     private WebElement logoutLink;
 
     public LoginPage logout(){
