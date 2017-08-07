@@ -14,13 +14,13 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(css = "#mailbox__login")
+    @FindBy(id = "mailbox__login")
     private WebElement loginField;
 
-    @FindBy(css = "#mailbox__password")
+    @FindBy(id = "mailbox__password")
     private WebElement passwordField;
 
-    @FindBy(css = "#mailbox__auth__button")
+    @FindBy(id = "mailbox__auth__button")
     private WebElement loginButton;
 
     public MailBoxPage login(String email, String password) {
